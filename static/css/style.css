@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+* CSS Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+nav ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/* End of CSS Reset */
+html, body {
+    height: 100%;
+    font-family: 'Montserrat';
+}
+.wrapper{
+	height: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.size{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.size_black {
+    background-color: #000;
+    margin-bottom: 40px; /* 30px */
+}
+.header{
+    width: 100%;
+    background: white;
+    height: 75px;
+}
+.header__title{
+    line-height: 75px;
+    font-size: 28px;
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+    height: 75px;
+	margin: auto auto;
+}
+.menu {
+    background-color: rgb(102, 102, 102);
+    height: 60px;
+    margin-bottom: 40px; 
+}
+.menu a {
+    text-decoration: none;
+    font-size: 18px;  
+    line-height: 60px;
+    margin-right: 20px;
+    color: white;
+}
+.menu .size{
+    display: block;
+}
+.sidebar{
+    min-width: 200px;  
+}
+.sidebar ul li{
+    list-style: none;
+    margin: 5px;
+	border-bottom: 1px solid #ffffff;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 18px;  
+    line-height: 25px;    
+    color: white;
+}
+.sidebar h2{
+    margin-bottom: 20px;
+}
+.block{
+    background-color: rgb(202, 202, 202);
+    padding: 20px;
+}
+.block h2{
+    font-size: 18px;
+    margin-top: 0;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+.main_black {
+    background-color: #000;
+    /* /* 30px */
+}
+.news{
+	max-width: 90%;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    background: rgb(226, 226, 226);
+}
+.news:last-child {  /*  Или убрать */
+    margin-bottom: 0;
+}
+.news__title {
+	height: 40px;
+	line-height: 40px;
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+.error {
+    width: 640px;    
+    margin: 0 auto;
+    padding: 30px;
+    background: none;
+}
+.error__image {
+    display: inline-block;
+	margin: 0 auto;
+}
+.error__title {
+	height: 40px;
+	line-height: 40px;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.choise {
+    height: 596px;
+    width: 641px;
+    background-image: url(../img/morpheus.jpg);
+    margin: 50px auto;    
+}
+.choise__button {
+    padding: 20px;
+    line-height: 110px;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.choise__button:hover {
+    font-size: 22px;
+}
+.choise__button_audio {
+    color: darkred;
+    position: relative;
+    top: 63%;
+    left: 14%;
+}
+.choise__button_video {
+    color: darkblue;
+    position: relative;
+    top: 63%;
+    left: 48%;
+}
+
+.news p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    height: auto;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	width: 50%;
+	height: auto;
+}
+.form__input {
+	margin: 5px auto;
+	width: 75%;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.form__input:first-child {
+	margin-top: 10px;
+}
+.form__button {
+	outline: none;
+	margin: 10px auto;
+	width: 80%;
+	height: 35px;
+	line-height: 35px;
+    background-color: #228b22;
+	border: 1px solid #000000;
+    border-radius: 5px;    
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.form__output {
+	
+	width: 40%;
+	height: 100px;
+	margin: auto auto;
+	font-size: 16px;
+	color: black;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    -webkit-box-shadow: inset -5px -5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -5px -5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: inset -5px -5px 20px 0px rgba(0,0,0,0.75);
+}
+.footer-text {
+    color: white;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+}
