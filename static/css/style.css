@@ -140,16 +140,14 @@ html, body {
     line-height: 25px;    
     color: white;
 }
-.sidebar h2{
-    margin-bottom: 20px;
-}
 .block{
     background-color: rgb(202, 202, 202);
     padding: 20px;
 }
-.block h2{
+.block__title {
     font-size: 18px;
-    margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
 }
 .main {
     width: 100%;
@@ -268,8 +266,7 @@ html, body {
     text-decoration: none;
     font-size: 16px;
 }
-.form__output {
-	
+.form__output {	
 	width: 40%;
 	height: 100px;
 	margin: auto auto;
@@ -282,10 +279,4 @@ html, body {
     -webkit-box-shadow: inset -5px -5px 20px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -5px -5px 20px 0px rgba(0,0,0,0.75);
     box-shadow: inset -5px -5px 20px 0px rgba(0,0,0,0.75);
-}
-.footer-text {
-    color: white;
-    line-height: 80px;
-    margin: 0;
-    padding: 0;
 }
